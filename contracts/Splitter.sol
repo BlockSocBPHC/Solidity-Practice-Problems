@@ -12,7 +12,7 @@ contract Splitter {
     }
 
     function split() public payable {
-        uint256 amountToSplit = msg.value / 2;
+        uint256 amountToSplit = 2*msg.value / 4;
         payable(recipient1).transfer(amountToSplit);
         payable(recipient2).transfer(amountToSplit);
     }
