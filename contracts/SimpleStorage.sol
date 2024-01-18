@@ -10,6 +10,13 @@ contract SimpleStorage{
         }
         
         function get() public view returns (_address) {
+    address public data;
+
+        function set(address value) public{
+            data = value;
+        }
+        
+        function get() public view returns (address) {
             return data;
         }
         
