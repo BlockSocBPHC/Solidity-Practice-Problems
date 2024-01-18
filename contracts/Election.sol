@@ -13,11 +13,11 @@ contract Election {
 
     function voteForCandidate1() public {
         require(msg.sender != owner, "Owner cannot vote");
-        candidate2++;
+        candidate1++;
     }
 
     function voteForCandidate2() public {
         require(msg.sender != owner, "Owner cannot vote");
-        candidate1++;
+        candidate2++;
     }
 }
