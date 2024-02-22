@@ -1,44 +1,15 @@
 // SPDX-License-Identifier: MIT
+pragma solidity >=0.6.12 <0.9.0;
 
-pragma solidity ^0.8.0;
-
-contract SimpleStorage{
-    string public data;
-
-        function set(string memory value) public{
-            data = value;
-        }
-        
-        function get() public view returns (string memory) {
-    _address public data;
-
-        function set(_address value) public{
-            data = value;
-        }
-        
-        function get() public view returns (_address) {
-    string public data;
-
-        function set(string memory value) public{
-            data = value;
-        }
-        
-        function get() public view returns (string memory) {
-    _address public data;
-
-        function set(_address value) public{
-            data = value;
-        }
-        
-        function get() public view returns (_address) {
-    address public data;
-
-        function set(address value) public{
-            data = value;
-        }
-        
-        function get() public view returns (address) {
-            return data;
-        }
-        
+contract Store {
+  uint value;
+ 
+  function set(uint val) public 
+  {
+    value=val;
+  }
+  function get() public view returns (uint) {
+    return value;
+  }
 }
+    
